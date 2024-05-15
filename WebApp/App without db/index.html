@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Start Screen</title>
+  <style>
+    body {
+      background-color: #ece8e8;
+      text-align: center;
+    }
+
+    .container {
+      background-color: white;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 2vh;
+      padding-bottom: 5vh;
+
+
+      width: 100%;
+      max-width: calc(100vh * 9 / 16);
+      height: 100vh;
+      min-width: 250px;
+      min-height: 400px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .subText {
+      color: black;
+      font-size: 24px;
+      font-family: Poppins;
+      font-weight: 600;
+      word-wrap: break-word;
+      text-align: center;
+      /* Added */
+      margin-top: 5vh;
+      /* Added */
+    }
+
+    .img-logo {
+      height: 40vh;
+      width: 30vh;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .authentication {
+      display: flex;
+      margin-top: 20vh;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .signin {
+      width: 20vh;
+      height: 7vh;
+      background: #cd1329;
+      border: none;
+      border-radius: 1.5vh;
+      text-align: center;
+      color: white;
+      font-size: 3vh;
+      font-family: Outfit;
+      font-weight: 700;
+      word-wrap: break-word;
+    }
+
+    .register {
+      width: 20vh;
+      height: 7vh;
+      background: #ece8e8;
+      border: none;
+      border-radius: 1.5vh;
+      text-align: center;
+      color: #202322;
+      font-size: 3vh;
+      font-family: Outfit;
+      font-weight: 700;
+      word-wrap: break-word;
+    }
+
+    .register:hover {
+      cursor: pointer;
+    }
+
+    .signin:hover {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img id="logo" class="img-logo" src="logo.png" alt="plate containing noodles photo" />
+    <div class="subText">
+      Order your favorite Meals<br />
+      Here!
+    </div>
+    <div class="authentication">
+      <button class="signin" id="loginBtn">SIGN IN</button>
+      <button class="register" id="registerBtn">REGISTER</button>
+    </div>
+  </div>
+
+  <script>
+    document
+      .getElementById("registerBtn")
+      .addEventListener("click", function () {
+        window.location.href = "signup.html";
+      });
+    document
+      .getElementById("loginBtn")
+      .addEventListener("click", function () {
+        window.location.href = "login.html";
+      });
+  </script>
+</body>
+
+</html>

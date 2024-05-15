@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signup Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ece8e8;
+    }
+
+    #back-icon {
+      height: 3vh;
+      width: 3vh;
+      cursor: pointer;
+    }
+
+
+    .login-container {
+      background-color: white;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 2vh;
+      padding-bottom: 5vh;
+
+
+      width: 100%;
+      max-width: calc(100vh * 9 / 16);
+      height: 100vh;
+      min-width: 250px;
+      min-height: 400px;
+      margin: 0 auto;
+      overflow: hidden;
+      padding-bottom: 10px;
+    }
+
+    #login-img-logo {
+      height: 40vh;
+      width: 30vh;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 4vh;
+    }
+
+    .form-container {
+      margin-top: 7vh;
+
+    }
+
+    .form-group {
+      margin-bottom: 3vh;
+    }
+
+    .form-group input {
+      width: 95%;
+      padding: 2vh;
+      border: 1px solid #ccc;
+      border-radius: 4vh;
+    }
+
+    .btn-container {
+      text-align: center;
+    }
+
+    .btn {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 7vh;
+      padding: 10px 20px;
+      height: 7vh;
+      width: 100%;
+      background-color: #cd1329;
+      color: #fff;
+      border: none;
+      border-radius: 4vh;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #ece8e8;
+      color: black;
+    }
+
+    .form-links {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 3vh;
+      color: black;
+    }
+
+    .form-links a {
+      color: black;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 480px) {
+
+      /* Adjustments for mobile devices */
+      .login-container {
+        max-width: 100%;
+        padding: 20px;
+      }
+
+      .container h2 {
+        font-size: 24px;
+        margin-bottom: 45px;
+      }
+
+      .form-group label {
+        font-size: 14px;
+      }
+
+      .form-group input {
+        font-size: 14px;
+      }
+
+      .btn {
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 55px;
+        padding: 10px 20px;
+        width: 100%;
+        background-color: #cd1329;
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+
+      .form-links {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        color: black;
+      }
+
+      .form-links a {
+        margin-bottom: 10px;
+      }
+
+      #signUP {
+        color: black;
+      }
+
+      .forgotPassword {
+        color: black;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login-container">
+    <img id="back-icon" src="./assets/icons/back_lps07f8cfplc.svg" alt="back icon">
+    <img id="login-img-logo" src="./logo.png" alt="Yameni logo">
+    <form class="form-container">
+      <div class="form-group">
+        <input type="text" id="username" placeholder="Username, Email" required />
+      </div>
+      <div class="form-group">
+        <input type="password" id="password" placeholder="Password" required />
+        <div class="form-links">
+          <a id="signUp" href="signup.html">Sign up</a>
+          <a id="forgotPassword" href="#">Forgot password?</a>
+        </div>
+      </div>
+      <div class="btn-container">
+        <button id="submit-btn" class="btn" type="submit">LOGIN</button>
+      </div>
+    </form>
+  </div>
+  <script>
+    document.getElementById("back-icon").addEventListener("click", function () {
+      window.location.href = "index.html";
+    });
+    document.getElementById("submit-btn").addEventListener("click", function () {
+      window.location.href = "home.html";
+    });
+  </script>
+
+</body>
+
+</html>
