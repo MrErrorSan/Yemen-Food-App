@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+<style name="Base.Theme.YemenFood" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <!-- Customize your light theme here -->
+    <item name="colorPrimary">@color/my_red</item>
+<!--    <item name="android:buttonStyle">@style/LightButtonStyle</item>-->
+    <item name="android:textColorPrimary">@color/my_black</item>
+    <item name="android:colorBackground">@color/my_white</item>
+    <item name="cardBackgroundColor">@color/my_gray</item>
+
+<!--    <item name="android:windowAnimationStyle">@style/WindowAnimationStyle</item>-->
+    <!-- Add more light mode attributes as needed -->
+    <item name="android:statusBarColor">@color/my_red</item>
+</style>
+
+<style name="Theme.YemenFood" parent="Base.Theme.YemenFood" />
+
+<!--<style name="WindowAnimationStyle">-->
+<!--    <item name="android:windowEnterAnimation">@android:anim/fade_in</item>-->
+<!--    <item name="android:windowExitAnimation">@android:anim/fade_out</item>-->
+<!--</style>-->
+
+<!--&lt;!&ndash; Light mode button style &ndash;&gt;-->
+<!--<style name="LightButtonStyle" parent="Widget.MaterialComponents.Button">-->
+<!--    <item name="android:background">@drawable/button_background</item>-->
+<!--    <item name="android:textColor">@color/my_light_button_text_color</item>-->
+<!--</style>-->
+
+<!--&lt;!&ndash; Light mode TextView style &ndash;&gt;-->
+<!--<style name="LightTextViewStyle" parent="Widget.MaterialComponents.TextView">-->
+<!--    <item name="android:textColor">@color/my_light_text_color_primary</item>-->
+<!--</style>-->
+
+<!--&lt;!&ndash; Light mode EditText style &ndash;&gt;-->
+<!--<style name="LightTextEditStyle" parent="Widget.AppCompat.EditText">-->
+<!--    <item name="android:textColor">@color/my_light_text_color_primary</item>-->
+<!--    <item name="android:textColorHint">@color/my_light_text_color_hint</item>-->
+<!--</style>-->
+
+</resources>
